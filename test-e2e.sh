@@ -19,7 +19,7 @@ fi
 
 webdriver-manager update
 webdriver-manager start &
-npm start &
+npm run start:daemon &
 
 sleep 15
 
