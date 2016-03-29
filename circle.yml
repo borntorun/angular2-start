@@ -30,10 +30,10 @@ test:
     - npm run lint
     - npm run test
     - nvm use 4.4 && npm run test # Node LTS (Mature)
-    # - npm run e2e // NOTE: not running on circle as e2e test already run in travis
+    - npm run e2e
   post:
     - nvm use 5.7
-    # - coveralls < coverage/lcov.info // NOTE: not running on circle as coverage is already run in travis
+    - coveralls < coverage/lcov.info
 
 # Deployment
 
